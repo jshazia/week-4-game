@@ -54,6 +54,7 @@ function moveToEnemies() {
 }
 
 function resetGame() {
+
     $("#owkTotalText").children(".health").html(obiWanKenobi.health);
     $("#lsTotalText").children(".health").html(lukeSkywalker.health);
     $("#dsTotalText").children(".health").html(darthSidious.health);
@@ -82,6 +83,7 @@ $(document).ready(function() {
     $("#owkTotalText").on("click", function () {
 
         if(characterSelected == false)
+
         {
 
             $("#gameStatus").empty();
@@ -148,6 +150,7 @@ $(document).ready(function() {
     $("#dsTotalText").on("click", function () {
 
         if(characterSelected == false)
+
         {
             $("#gameStatus").empty();
 
@@ -161,6 +164,7 @@ $(document).ready(function() {
         }
 
         else if ((characterSelected == true) && (defenderSelected == false))
+
         {
 
             if($("#dsTotalText").hasClass("enemyCharacter")) {
@@ -178,6 +182,7 @@ $(document).ready(function() {
     $("#dmTotalText").on("click", function () {
 
         if(characterSelected == false)
+
         {
             $("#gameStatus").empty();
 
@@ -191,6 +196,7 @@ $(document).ready(function() {
         }
 
         else if ((characterSelected == true) && (defenderSelected == false))
+
         {
 
             if($("#dmTotalText").hasClass("enemyCharacter")) {
@@ -207,7 +213,8 @@ $(document).ready(function() {
 
     $("#attack").on("click", function() {
 
-        if (characterSelected && defenderSelected && !gameOver) {
+        if (characterSelected && defenderSelected && !gameOver)
+        {
 
             defender.health = defender.health - character.attack;
             $(".defenderCharacter").children(".health").html(defender.health);
@@ -217,29 +224,35 @@ $(document).ready(function() {
             character.attack = character.attack + character.baseAttack;
 
 
-            if (defender.health > 0) {
+            if (defender.health > 0)
+
+            {
                 character.health = character.health - defender.baseAttack;
                 $(".chosenCharacter").children(".health").html(character.health);
 
-                if (character.health > 0) {
+                if (character.health > 0)
+                {
 
                     $("#gameStatus").append("<p>" + defender.name + " attacked you back for " + defender.baseAttack + " damage.</p>");
                 }
 
-                else {
+                else
+                    {
                     gameOver = true;
                     $("#gameStatus").html("<p>You were defeated! </p><p>Play again?</p>");
                     $("#restart").show();
                 }
             }
 
-            else {
+            else
+                {
                 enemiesDefeated++;
                 defenderSelected = false;
                 $("#gameStatus").html("<p>You have defeated " + defender.name + ". Choose another enemy.</p>");
                 $(".defender-character").hide();
 
-                if (enemiesDefeated === 3) {
+                if (enemiesDefeated === 3)
+                {
                     gameOver = true;
                     $("#gameStatus").html("<p>You Win!</p><p>Play again?</p>");
                     $("#restart").show();
@@ -255,6 +268,7 @@ $(document).ready(function() {
         }
 
         else if (!defenderSelected && !gameOver)
+
         {
 
             $("#gameStatus").html("<p>You must choose an enemy to fight.</p>");
