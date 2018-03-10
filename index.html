@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Star Wars Game</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+<body background="assets/images/darkness.png">
+
+<h1> Star Wars RPG </h1>
+
+<div id="characters">
+
+    <button class="characterImage availableCharacter" id="lsTotalText"><p> Luke Skywalker </p>
+        <img src="assets/images/LukeSkywalker.jpg" width="150px" height="100px">
+        <p class="health">100</p>
+    </button>
+
+    <button class="characterImage availableCharacter" id="dmTotalText"> <p> Darth Maul</p>
+        <img src="assets/images/DarthMaul.png" height="100px">
+        <p class="health">180 </p>
+    </button>
+
+    <button class="characterImage availableCharacter" id="owkTotalText"> <p> Obi Wan Kenobi </p>
+        <img src="assets/images/ObiWanKenobi.jpg" width="150px" height="100px">
+        <p class="health">120</p>
+    </button>
+
+    <button class="characterImage availableCharacter" id="dsTotalText"> <p> Darth Sidious </p>
+        <img src="assets/images/DarthSidious.png" width="150px" height="100px">
+        <p class="health">150</p>
+    </button>
+
+</div>
+
+<h2>Your Character</h2>
+<div id="pickedCharacter"></div>
+
+<h3> Enemies Available to Attack </h3>
+
+<div id="enemies"></div>
+
+<h4>Fight Section</h4>
+<div id="fightSection">
+<button id="attack"><a>Attack!</a></button>
+</div>
+<div id="gameStatus"></div>
+<button id="restart">Restart</button>
+
+<h5>Defender</h5>
+
+<div id="defender"></div>
+
+
+</body>
+</html>

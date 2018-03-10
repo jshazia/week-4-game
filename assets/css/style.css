@@ -1,0 +1,58 @@
+body {
+    font-family: 'Krona One', sans-serif;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    margin: 30px;
+    color: white;
+}
+
+button {
+    display:inline-block;
+    vertical-align:text-top;
+    margin: 20px;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+}
+
+#pickedCharacter {
+
+    margin: 20px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+}
+
+#gameStatus {
+    color: white;
+}
